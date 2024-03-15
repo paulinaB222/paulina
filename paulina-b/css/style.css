@@ -1,0 +1,130 @@
+*{
+    font-family: "satisfy", cursive;
+}
+
+body{
+    height: 105vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: hidden;
+    background-color:#ca99aa;
+}
+.tag{
+    font-size: 1rem;
+    background-color: #bb6d88;
+    border-radius: 5px;
+    width: 10rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    
+}
+.titulo{
+    font-size: 2rem;
+    font-weight: 700;
+    
+    
+}
+
+.bakery-container{
+    background-color:rgb(242, 181, 252);
+    display: grid;
+    grid-template-rows: 60% 50%;
+    height: 80%;
+    width: 30%;
+    box-shadow:10px 10px 25px 0px #DCB4C2;
+}
+.img-container{
+    background-image: url("../imagenes/img1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 45px 30px;
+    width: 32rem;
+    height: 68%;
+}
+.bakery-description{
+    background-color: #e45f8e;
+    color: #ffb6b6;
+    padding-left:20px;
+    margin-top: -69px;
+}
+.bakery-detalles{
+    display:flex;
+    flex-direction: column;
+    margin-top: -20px;
+}
+.img-container img{
+    width:28rem;
+}
+.stars{
+    color:rgb(163, 206, 255);
+    font-size: 1em;
+}
+.bakery-precios{
+    display: flex;
+    align-items:center;
+    width: 70%;
+    justify-content: space-between;
+    margin-top: -20px;
+}
+.postres{
+    display:flex;
+    width: 6rem;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.Mini-cake-Red-velvet{
+    background-color:hotpink;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+.Mini-cake-cookie-Stawberry{
+    background-color:honeydew;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+.MacarronS{
+    background-color:fuchsia;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+.Precios{
+    display: flex;
+    width: 14rem;
+    justify-content: space-between;
+    align-items: center;
+}
+.old-price{
+font-weight: 60;
+
+}
+
+button{
+    cursor: pointer;
+}
+#button{
+    background-color: #c18be2;
+}
+button cyan-button{
+    background-color:#fff;
+}
+
+.button-text{
+    color: #eeecec;
+    margin-left: 10px;
+}
+
+.feedback{
+    display: none;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 10px;
+}
+
+
