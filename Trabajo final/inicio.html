@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Girly Makeup</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+            <img src="Img/girly.jpg" alt="Logo Girly" class="Logo">
+            <h1 id="Nombre de la empresa">Girly Tienda De Maquillaje</h1>
+            
+      
+    </header>
+    <nav>
+        <button class="loginbtn" onclick="document.getElementById('login-form').style.display='block'"
+        style="width: auto;">
+            Inicio
+        </button>
+        <a href="#" class="nav-link">Tienda</a>
+        <a href="#" class="nav-link">Ofertas</a>
+        <a href="#" class="nav-link">Contacto</a>
+        
+            </nav>
+             
+
+            <div class="slider-container">
+                <div class="slide-track">
+                <div class="slider">
+                    <img src="img/lipstick-1137534_1280.jpg" alt="lABIALES ATENEA">
+                    <img src="img/makeup-2568384_1280.jpg" alt="BROCHAS ATENEA">
+                    <img src="img/lipstick-1137537_1280.jpg" alt="LABIALES ATENEA">
+                    <img src="img/powder-in-the-balls-1778619_1280.jpg" alt="POLVO ATENEA">
+                </div>
+                </div>
+        </div>
+</div>
+    <div id="login-form" class="login-page">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" onclick="login()"class='toggle-btn'>
+                    Iniciar
+                </button>
+                <button type="button" onclick="register()" class="toggle-btn">
+                    registrate
+                </button>
+            </div>
+        <form id="login" class="input-group-login">
+            <input type="text" class="input-field" placeholder="Email" required>
+            <input type="password" class="input-field" placeholder="Ingresa Contraseña" required>
+            <input type="checkbox" class="checkbox"> <samp>Recordar contraseña</samp>
+            <button type="submit" class="submit-btn">
+                login
+            </button>
+        </form>
+        <form id="register" class="input-group-register">
+            <input type="text" class="input-field" placeholder="Nombre" required>
+            <input type="text" class="input-field" placeholder="Apellido" required>
+            <input type="email" class="input-field" placeholder="Email " required>
+            <input type="password" class="input-field" placeholder="Crear Contraseña" required>
+            <input type="checkbox" class="check-box"> <samp>Acepto todos los terminos</samp>
+            <button type="submit" class="submit-btn">
+                Registrar
+            </button>
+        </form>
+    </div>
+   </div>
+</div>
+<script>
+    var x=document.getElementById('login');
+    var y=document.getElementById('register');
+    var z=document.getElementById('btn');
+    function register() {
+        
+        x.style.left='-400px';
+        y.style.left='50px';
+        z.style.left='110px';
+    }
+    function login(){
+
+        x.style.left='50px';
+        y.style.left='450px';
+        z.style.left='0px';
+    }
+</script>
+<script>
+
+    var modal = document.getElementById('login-form');
+    window.onclick = function(event){
+
+        if (event.target == modal){
+            modal.style.display = "none";
+        }
+    }
+</script>
+   
+<script src="script/slider.js"></script>
+<footer>Girly es una tienda de Maquillaje nacional de la mas alta calidad, donde encontraras marcas como Atenea, Beauty Creations entre otras destacando como la mejor
+    <br>GIRLY nuestra marca, donde nos destacamos por increibles productos para el cuidado de la piel y balsamos labiales increibles.
+    <br>¿Y tu, que esperas para comenzar a ser parte de la familia Girly?
+</footer>
+</body>
+</html>
